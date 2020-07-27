@@ -11,6 +11,8 @@
 // monta banco de dados 
 
 //var dominio='http://avanildo.com.br/'; //url do site para as paginas internas 
+var linkwats='http://api.whatsapp.com/send?1=pt_BR&phone=5519982193013';
+var celular='(19) 9-8219-3013';
 
 var dominio='http://avanildo.com.br/';
 var horizontal = new Array();// nova array de objeto
@@ -36,7 +38,7 @@ var t3_rodape="<h2>Contato </h2>";
     
 	rodape2[0]=new montamenu("#","Avanildo Construções",0);
 	rodape2[1]=new montamenu("#","Rua:Antonio koch Leme Filho N60 ",0);    
-	rodape2[2]=new montamenu("#","Fone: (19)3035-5755)",0);
+	rodape2[2]=new montamenu("#","Fone: (19)9-8219-3013)",0);
 	rodape2[3]=new montamenu("#","Email: Avanildocontrucoes@gmail.com",0); 
 
 // variavel do blog
@@ -49,9 +51,8 @@ var blogtitolo="<h2> Informações do blog</> ";
 	horizontal[0] = new montamenu(dominio+"index.html","Inicio",0); // monta o objeto e coloca no array
 	horizontal[1] = new montamenu("http://avanildo.usa.cc","Galeria",0);     
 	horizontal[2] = new montamenu("http://www.noticiascnc.com.br/","Noticias",1);     
-	horizontal[3] = new montamenu(dominio+"paginas/lista-servico.html","Especialidades",0);     
-	horizontal[4] = new montamenu(dominio+"paginas/contato.html","Contato",0);     
-	horizontal[5] = new montamenu(dominio+"paginas/sobre.html","Sobre Nos",0);     
+	horizontal[3] = new montamenu(dominio+"paginas/contato.html","Contato",0);     
+	horizontal[4] = new montamenu(dominio+"paginas/sobre.html","Sobre Nos",0);     
 
 // Menu vertical
 	vertical[0] = new montamenu(dominio+"paginas/azulejista.html","Azulejista",0);     
@@ -114,7 +115,8 @@ function montarlista(m) {
        	            	       
        	            	       }, 
                complete:function (data) {// funcao completa depois de success 
-                 	alert('Obrigado!  Retornaremos assim que possível');
+                 	alevar linkwats='http://api.whatsapp.com/send?1=pt_BR&phone=5519988046076';
+var celular='(19) 9-8804-6076';rt('Obrigado!  Retornaremos assim que possível');
                  	$(".modal .close").click();
                  	$('.form').each (function(data){ this.reset(data);});
                     }
@@ -129,8 +131,8 @@ function montarlista(m) {
 
 // variaves de apoio 
 
-	telefone='<br /> (19)9-8219-3013 Tim<br />  (19)9-9556-0691 Claro';
-	watsapp='<img  src="'+dominio+'img/watsap.png" align="middle"  height="100" alt="Watssap" title="WatsApp"> <br /> (19)9-8219-3013';
+	telefone='Celular<br />'+celular;
+	watsapp='<a href="'+linkwats+'" ><img  src="'+dominio+'img/watsap.png" align="middle"  height="100" alt="Watssap" title="WatsApp"> </a>'
 
 	aviso='<div style="color:#1f7a1f; text-align:center"> <font size="5"> <strong><p> Obrigado aos nossos clientes e amigo.'; 
 	aviso+='Estamos encerrando nossas atividades apartir de';
