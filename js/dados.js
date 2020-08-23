@@ -116,7 +116,7 @@ function montarlista(m) {
        	            	       }, 
                complete:function (data) {// funcao completa depois de success 
                  	alevar linkwats='http://api.whatsapp.com/send?1=pt_BR&phone=5519988046076';
-var celular='(19) 9-8804-6076';rt('Obrigado!  Retornaremos assim que possível');
+                        var celular='(19) 9-8219-3013';rt('Obrigado!  Retornaremos assim que possível');
                  	$(".modal .close").click();
                  	$('.form').each (function(data){ this.reset(data);});
                     }
@@ -132,7 +132,7 @@ var celular='(19) 9-8804-6076';rt('Obrigado!  Retornaremos assim que possível')
 // variaves de apoio 
 
 	telefone='Celular<br />'+celular;
-	watsapp='<a href="'+linkwats+'" ><img  src="'+dominio+'img/watsap.png" align="middle"  height="100" alt="Watssap" title="WatsApp"> </a>'
+	watsapp='<a href="'+linkwats+'" ><img  src="'+dominio+'img/watsap.png" align="middle"  height="100" alt="Watssap" title="WatsApp"> </a>';
 
 	aviso='<div style="color:#1f7a1f; text-align:center"> <font size="5"> <strong><p> Obrigado aos nossos clientes e amigo.'; 
 	aviso+='Estamos encerrando nossas atividades apartir de';
